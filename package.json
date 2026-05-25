@@ -1,0 +1,16 @@
+{
+  "name": "auto-portfolio-deploy",
+  "version": "1.0.0",
+  "description": "Modern portfolio website with automated CI/CD deployment via Jenkins on AWS EC2",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "keywords": ["portfolio", "jenkins", "cicd", "aws", "ec2", "devops"],
+  "author": "Justus Faby Jeyakumar",
+  "license": "MIT",
+  "devDependencies": {
+    "vite": "^6.3.5"
+  }
+}

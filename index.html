@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO Meta Tags -->
+  <title>Justus Faby Jeyakumar — Full Stack Developer Portfolio</title>
+  <meta name="description" content="Portfolio of Justus Faby Jeyakumar — Full Stack Developer specializing in React.js, Next.js, Node.js, AWS, and cloud computing. View my projects, skills, and get in touch." />
+  <meta name="keywords" content="full stack developer, web developer, portfolio, JavaScript, React, Node.js, AWS, DevOps, Justus Faby" />
+  <meta name="author" content="Justus Faby Jeyakumar" />
+
+  <!-- Open Graph / Social -->
+  <meta property="og:title" content="Justus Faby Jeyakumar — Full Stack Developer" />
+  <meta property="og:description" content="Explore my portfolio of modern web applications and cloud-native projects." />
+  <meta property="og:type" content="website" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Fira+Code:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════
+       NAVIGATION
+       ═══════════════════════════════════════════ -->
+  <nav id="navbar" class="navbar">
+    <div class="nav-container">
+      <!-- Logo / Brand -->
+      <a href="#hero" class="nav-logo" aria-label="Home">
+        <span class="logo-bracket">&lt;</span>JF<span class="logo-bracket"> /&gt;</span>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <ul id="nav-menu" class="nav-menu">
+        <li><a href="#hero" class="nav-link active" data-section="hero">Home</a></li>
+        <li><a href="#about" class="nav-link" data-section="about">About</a></li>
+        <li><a href="#skills" class="nav-link" data-section="skills">Skills</a></li>
+        <li><a href="#projects" class="nav-link" data-section="projects">Projects</a></li>
+        <li><a href="#resume" class="nav-link" data-section="resume">Resume</a></li>
+        <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
+      </ul>
+
+      <!-- Mobile Hamburger Toggle -->
+      <button id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+    </div>
+  </nav>
+
+
+  <!-- ═══════════════════════════════════════════
+       HERO SECTION
+       ═══════════════════════════════════════════ -->
+  <section id="hero" class="hero-section">
+    <!-- Animated background particles -->
+    <div class="hero-particles" aria-hidden="true">
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+    </div>
+
+    <div class="hero-content">
+      <p class="hero-greeting animate-fade-up">Hello, I'm</p>
+      <h1 class="hero-name animate-fade-up delay-1">Justus Faby Jeyakumar</h1>
+      <div class="hero-title animate-fade-up delay-2">
+        <span class="typing-prefix">I'm a&nbsp;</span>
+        <span id="typing-text" class="typing-text"></span>
+        <span class="typing-cursor">|</span>
+      </div>
+      <p class="hero-description animate-fade-up delay-3">
+        Proactive IT undergraduate building modern, scalable web applications with React.js, Next.js &amp; Node.js.
+        Passionate about cloud computing, AWS, and delivering exceptional user experiences.
+      </p>
+      <div class="hero-cta animate-fade-up delay-4">
+        <a href="#projects" class="btn btn-primary">
+          <i class="fas fa-rocket"></i> View My Work
+        </a>
+        <a href="#contact" class="btn btn-outline">
+          <i class="fas fa-envelope"></i> Get In Touch
+        </a>
+      </div>
+      <div class="hero-socials animate-fade-up delay-5">
+        <a href="https://github.com/justusfaby" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://linkedin.com/in/justusfaby" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </div>
+    </div>
+
+    <!-- Scroll indicator -->
+    <div class="scroll-indicator animate-fade-up delay-5">
+      <span>Scroll Down</span>
+      <div class="scroll-arrow">
+        <i class="fas fa-chevron-down"></i>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════
+       ABOUT SECTION
+       ═══════════════════════════════════════════ -->
+  <section id="about" class="section about-section">
+    <div class="container">
+      <h2 class="section-title reveal">
+        <span class="section-number">01.</span> About Me
+      </h2>
+
+      <div class="about-grid">
+        <!-- Profile Image -->
+        <div class="about-image reveal">
+          <div class="image-wrapper">
+            <div class="image-placeholder">
+              <i class="fas fa-user-astronaut"></i>
+            </div>
+            <div class="image-border"></div>
+          </div>
+        </div>
+
+        <!-- About Text -->
+        <div class="about-text reveal">
+          <p>
+            Hi! I'm <strong>Justus Faby Jeyakumar</strong>, a proactive Information Technology
+            undergraduate at <strong>Sri Shakthi Institute of Engineering and Technology</strong>
+            with hands-on experience in full-stack web development and cloud computing.
+          </p>
+          <p>
+            I'm skilled in <strong>Java, JavaScript/TypeScript</strong>, and frameworks like
+            <a href="#skills" class="text-link">React.js</a> and
+            <a href="#skills" class="text-link">Next.js</a>, with a strong grasp of backend
+            tools such as <a href="#skills" class="text-link">Node.js</a>, MongoDB, and Firebase.
+          </p>
+          <p>
+            I have a proven track record as a Web Development Intern, building responsive and
+            scalable apps. Certified in <strong>AWS, Generative AI, and Figma</strong>, with
+            national-level hackathon achievements and strong multilingual communication skills
+            in English, Tamil, Hindi, and German.
+          </p>
+
+          <!-- Quick Stats -->
+          <div class="about-stats">
+            <div class="stat">
+              <span class="stat-number" data-count="5">0</span>+
+              <span class="stat-label">Projects</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number" data-count="2">0</span>+
+              <span class="stat-label">Internships</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number" data-count="5">0</span>+
+              <span class="stat-label">Certifications</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number" data-count="500">0</span>+
+              <span class="stat-label">Commits</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════
+       SKILLS SECTION
+       ═══════════════════════════════════════════ -->
+  <section id="skills" class="section skills-section">
+    <div class="container">
+      <h2 class="section-title reveal">
+        <span class="section-number">02.</span> Skills & Technologies
+      </h2>
+
+      <!-- Skill Category Cards -->
+      <div class="skills-grid">
+
+        <!-- Languages -->
+        <div class="skill-card reveal" id="skill-languages">
+          <div class="skill-card-icon">
+            <i class="fas fa-code"></i>
+          </div>
+          <h3 class="skill-card-title">Languages</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Java</span>
+            <span class="skill-tag">JavaScript (ES6+)</span>
+            <span class="skill-tag">TypeScript</span>
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">C</span>
+            <span class="skill-tag">HTML5</span>
+            <span class="skill-tag">CSS3</span>
+          </div>
+          <div class="skill-bars">
+            <div class="skill-bar-item">
+              <div class="skill-bar-header">
+                <span>JavaScript / TypeScript</span><span>90%</span>
+              </div>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill" data-width="90"></div>
+              </div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-header">
+                <span>Java</span><span>85%</span>
+              </div>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill" data-width="85"></div>
+              </div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-header">
+                <span>Python</span><span>75%</span>
+              </div>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill" data-width="75"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Frontend -->
+        <div class="skill-card reveal" id="skill-frontend">
+          <div class="skill-card-icon">
+            <i class="fas fa-palette"></i>
+          </div>
+          <h3 class="skill-card-title">Frontend</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">React.js</span>
+            <span class="skill-tag">Next.js</span>
+            <span class="skill-tag">Tailwind CSS</span>
+            <span class="skill-tag">Bootstrap</span>
+            <span class="skill-tag">Figma</span>
+          </div>
+          <div class="skill-bars">
+            <div class="skill-bar-item">
+              <div class="skill-bar-header">
+                <span>React.js / Next.js</span><span>90%</span>
+              </div>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill" data-width="90"></div>
+              </div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-header">
+                <span>Tailwind CSS</span><span>88%</span>
+              </div>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill" data-width="88"></div>
+              </div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-header">
+                <span>Figma (UI/UX)</span><span>78%</span>
+              </div>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill" data-width="78"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Backend & Databases -->
+        <div class="skill-card reveal" id="skill-backend">
+          <div class="skill-card-icon">
+            <i class="fas fa-server"></i>
+          </div>
+          <h3 class="skill-card-title">Backend & Databases</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Node.js</span>
+            <span class="skill-tag">Express</span>
+            <span class="skill-tag">MongoDB</span>
+            <span class="skill-tag">MySQL</span>
+            <span class="skill-tag">Firebase</span>
+            <span class="skill-tag">Supabase</span>
+            <span class="skill-tag">Django</span>
+          </div>
+          <div class="skill-bars">
+            <div class="skill-bar-item">
+              <div class="skill-bar-header">
+                <span>Node.js / Express</span><span>85%</span>
+              </div>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill" data-width="85"></div>
+              </div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-header">
+                <span>MongoDB</span><span>82%</span>
+              </div>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill" data-width="82"></div>
+              </div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-header">
+                <span>Firebase / Supabase</span><span>80%</span>
+              </div>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill" data-width="80"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tools & Cloud -->
+        <div class="skill-card reveal" id="skill-tools">
+          <div class="skill-card-icon">
+            <i class="fas fa-cloud"></i>
+          </div>
+          <h3 class="skill-card-title">Tools & Cloud</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Git</span>
+            <span class="skill-tag">GitHub</span>
+            <span class="skill-tag">AWS</span>
+            <span class="skill-tag">Postman</span>
+            <span class="skill-tag">Vercel</span>
+            <span class="skill-tag">Render</span>
+            <span class="skill-tag">VS Code</span>
+          </div>
+          <div class="skill-bars">
+            <div class="skill-bar-item">
+              <div class="skill-bar-header">
+                <span>Git / GitHub</span><span>90%</span>
+              </div>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill" data-width="90"></div>
+              </div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-header">
+                <span>AWS (EC2, RDS, Amplify)</span><span>80%</span>
+              </div>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill" data-width="80"></div>
+              </div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-header">
+                <span>Vercel / Render</span><span>85%</span>
+              </div>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill" data-width="85"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════
+       PROJECTS SECTION
+       ═══════════════════════════════════════════ -->
+  <section id="projects" class="section projects-section">
+    <div class="container">
+      <h2 class="section-title reveal">
+        <span class="section-number">03.</span> Featured Projects
+      </h2>
+
+      <div class="projects-grid">
+
+        <!-- Project 1: Health Connect -->
+        <article class="project-card reveal" id="project-1">
+          <div class="project-image">
+            <div class="project-image-placeholder">
+              <i class="fas fa-heartbeat"></i>
+            </div>
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="https://github.com/justusfaby/health-connect" target="_blank" rel="noopener noreferrer" aria-label="View source code">
+                  <i class="fab fa-github"></i>
+                </a>
+                <a href="#" target="_blank" rel="noopener noreferrer" aria-label="View live demo">
+                  <i class="fas fa-external-link-alt"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <p class="project-category">Full Stack · Healthcare</p>
+            <h3 class="project-title">Health Connect</h3>
+            <p class="project-description">
+              Hosted on AWS EC2 with PM2 for 24/7 uptime and crash recovery. Enables real-time
+              appointment booking and live chat using TypeScript and Firebase's real-time database.
+            </p>
+            <div class="project-tech">
+              <span>React</span>
+              <span>TypeScript</span>
+              <span>Tailwind CSS</span>
+              <span>Firebase</span>
+              <span>AWS Amplify</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 2: AI-Powered FAQ Chatbot -->
+        <article class="project-card reveal" id="project-2">
+          <div class="project-image">
+            <div class="project-image-placeholder">
+              <i class="fas fa-robot"></i>
+            </div>
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="https://github.com/justusfaby/ai-faq-chatbot" target="_blank" rel="noopener noreferrer" aria-label="View source code">
+                  <i class="fab fa-github"></i>
+                </a>
+                <a href="#" target="_blank" rel="noopener noreferrer" aria-label="View live demo">
+                  <i class="fas fa-external-link-alt"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <p class="project-category">AI · Full Stack</p>
+            <h3 class="project-title">AI-Powered FAQ Chatbot</h3>
+            <p class="project-description">
+              Full-stack AI chatbot using Groq API and Node.js for context-aware responses.
+              Reduced login latency by 15% and supports 500+ concurrent users. Deployed with
+              scalable microservices — frontend on Netlify, backend on Render, MongoDB Atlas for storage.
+            </p>
+            <div class="project-tech">
+              <span>React.js</span>
+              <span>Node.js</span>
+              <span>Express</span>
+              <span>MongoDB</span>
+              <span>Groq API</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 3: Udemy Clone -->
+        <article class="project-card reveal" id="project-3">
+          <div class="project-image">
+            <div class="project-image-placeholder">
+              <i class="fas fa-graduation-cap"></i>
+            </div>
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="https://github.com/justusfaby/udemy-clone" target="_blank" rel="noopener noreferrer" aria-label="View source code">
+                  <i class="fab fa-github"></i>
+                </a>
+                <a href="#" target="_blank" rel="noopener noreferrer" aria-label="View live demo">
+                  <i class="fas fa-external-link-alt"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <p class="project-category">Backend · LMS</p>
+            <h3 class="project-title">Udemy Clone — Learning Management System</h3>
+            <p class="project-description">
+              Learning management system with user authentication, course management, enrollment
+              tracking, and certificate generation. Implements role-based access (Admin/Instructor/Student)
+              with secure password hashing and SQL injection protection.
+            </p>
+            <div class="project-tech">
+              <span>Java</span>
+              <span>Amazon RDS</span>
+              <span>MySQL</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 4: Auto Portfolio Deploy (This Project!) -->
+        <article class="project-card reveal" id="project-4">
+          <div class="project-image">
+            <div class="project-image-placeholder">
+              <i class="fas fa-cloud-upload-alt"></i>
+            </div>
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="https://github.com/justusfaby/auto-portfolio-deploy" target="_blank" rel="noopener noreferrer" aria-label="View source code">
+                  <i class="fab fa-github"></i>
+                </a>
+                <a href="#" target="_blank" rel="noopener noreferrer" aria-label="View live demo">
+                  <i class="fas fa-external-link-alt"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <p class="project-category">DevOps · CI/CD</p>
+            <h3 class="project-title">Auto Portfolio Deployment Pipeline</h3>
+            <p class="project-description">
+              Automated CI/CD pipeline using Jenkins on AWS EC2. GitHub webhooks trigger automatic
+              builds — code is pulled and deployed to Apache on every push. Zero-downtime deployments
+              with full infrastructure-as-code approach.
+            </p>
+            <div class="project-tech">
+              <span>Jenkins</span>
+              <span>AWS EC2</span>
+              <span>Apache</span>
+              <span>GitHub Webhooks</span>
+              <span>Bash</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════
+       RESUME SECTION
+       ═══════════════════════════════════════════ -->
+  <section id="resume" class="section resume-section">
+    <div class="container">
+      <h2 class="section-title reveal">
+        <span class="section-number">04.</span> Resume
+      </h2>
+
+      <div class="resume-content reveal">
+        <div class="resume-card">
+          <div class="resume-icon">
+            <i class="fas fa-file-pdf"></i>
+          </div>
+          <h3>Download My Resume</h3>
+          <p>
+            Get a detailed overview of my education, internships, projects, skills,
+            certifications, and hackathon achievements.
+          </p>
+          <a href="assets/resume.pdf" download="Justus_Faby_Resume.pdf" class="btn btn-primary" id="resume-download-btn">
+            <i class="fas fa-download"></i> Download Resume (PDF)
+          </a>
+        </div>
+
+        <!-- Timeline -->
+        <div class="timeline">
+          <!-- Internship 1 -->
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="timeline-date">Sep 2025 — Nov 2025</span>
+              <h4>Web Development Intern</h4>
+              <p class="timeline-company">Elevate Labs</p>
+              <p>Developed cloud-native web apps using Next.js and Tailwind CSS, integrating Firebase APIs within Agile sprints. Managed frontend-backend data flow with seamless API integration.</p>
+            </div>
+          </div>
+          <!-- Internship 2 -->
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="timeline-date">May 2025 — Aug 2025</span>
+              <h4>Frontend Development Intern</h4>
+              <p class="timeline-company">Unified Mentor</p>
+              <p>Built responsive UI components that increased user engagement by 10%. Optimized rendering speed by 20% through React refactoring and lazy loading.</p>
+            </div>
+          </div>
+          <!-- Education 1 -->
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="timeline-date">Sep 2023 — May 2027</span>
+              <h4>B.Tech in Information Technology</h4>
+              <p class="timeline-company">Sri Shakthi Institute of Engineering and Technology</p>
+              <p>CGPA: 7.61 (Till 5th Semester). National Level Hackathon Finalist at IIMT, HITAM, and SVCE.</p>
+            </div>
+          </div>
+          <!-- Education 2 -->
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="timeline-date">Completed Apr 2023</span>
+              <h4>Senior Secondary (CBSE)</h4>
+              <p class="timeline-company">The Sagar School, Alwar, Rajasthan</p>
+              <p>Round Square Conference Attendee. Built a strong foundation in science and mathematics.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════
+       CONTACT SECTION
+       ═══════════════════════════════════════════ -->
+  <section id="contact" class="section contact-section">
+    <div class="container">
+      <h2 class="section-title reveal">
+        <span class="section-number">05.</span> Get In Touch
+      </h2>
+
+      <div class="contact-grid">
+        <!-- Contact Info -->
+        <div class="contact-info reveal">
+          <p class="contact-intro">
+            I'm currently open to internship and full-time opportunities. Whether you have a project
+            in mind, a collaboration idea, or just want to say hi — my inbox is always open!
+          </p>
+          <div class="contact-details">
+            <div class="contact-item">
+              <div class="contact-item-icon"><i class="fas fa-envelope"></i></div>
+              <div>
+                <h4>Email</h4>
+                <a href="mailto:justusfaby@gmail.com">justusfaby@gmail.com</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-item-icon"><i class="fas fa-phone"></i></div>
+              <div>
+                <h4>Phone</h4>
+                <a href="tel:+918870099067">+91 88700 99067</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-item-icon"><i class="fas fa-map-marker-alt"></i></div>
+              <div>
+                <h4>Location</h4>
+                <p>Tamil Nadu, India</p>
+              </div>
+            </div>
+          </div>
+          <div class="contact-socials">
+            <a href="https://github.com/justusfaby" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://linkedin.com/in/justusfaby" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <form id="contact-form" class="contact-form reveal" action="https://formspree.io/f/your-form-id" method="POST">
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="John Doe" required autocomplete="name" />
+          </div>
+          <div class="form-group">
+            <label for="email">Your Email</label>
+            <input type="email" id="email" name="email" placeholder="john@example.com" required autocomplete="email" />
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="Project Inquiry" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full" id="form-submit-btn">
+            <i class="fas fa-paper-plane"></i> Send Message
+          </button>
+          <p id="form-status" class="form-status"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════
+       FOOTER
+       ═══════════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <a href="#hero" class="footer-logo">
+          <span class="logo-bracket">&lt;</span>JF<span class="logo-bracket"> /&gt;</span>
+        </a>
+        <p class="footer-text">
+          Designed & Built by <strong>Justus Faby Jeyakumar</strong>
+        </p>
+        <p class="footer-text small">
+          Auto-deployed via Jenkins CI/CD Pipeline &nbsp;
+          <i class="fas fa-rocket" style="color: var(--accent-primary);"></i>
+        </p>
+        <div class="footer-socials">
+          <a href="https://github.com/justusfaby" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="https://linkedin.com/in/justusfaby" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- Back to Top Button -->
+  <button id="back-to-top" class="back-to-top" aria-label="Scroll to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+# ── Dependencies ──
+node_modules/
+
+# ── Build Output ──
+dist/
+
+# ── OS Files ──
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# ── IDE / Editor ──
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ── Environment ──
+.env
+.env.local
+.env.*.local
+
+# ── Logs ──
+*.log
+npm-debug.log*
+
+# ── Misc ──
+*.tgz
+package-lock.json
